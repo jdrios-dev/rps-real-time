@@ -11,6 +11,10 @@ app.get("/", (req, res) => {
   res.sendFile(join(__dirname, "index.html"));
 });
 
+app.get("/api", () => {
+  res.send({ work: true });
+});
+
 const players = {};
 let games = [];
 
