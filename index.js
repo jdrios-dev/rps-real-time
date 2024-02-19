@@ -7,7 +7,7 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server);
 
-app.get("/api", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(join(__dirname, "index.html"));
 });
 
